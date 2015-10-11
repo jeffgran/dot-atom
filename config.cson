@@ -25,3 +25,14 @@
   "expand-region": {}
   "autocomplete-plus": {}
   atomatigit: {}
+  minimap:
+    plugins:
+      selection: true
+  "minimap-selection":
+    highlightCursorsLines: true
+  "highlight-line":
+    enableSelectionBorder: true
+  "keyboard-scroll":
+    linesToScrollSingle: 15
+    animationDuration: 50
+  "cursor-history": {}

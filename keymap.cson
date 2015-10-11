@@ -20,6 +20,13 @@
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
   'ctrl-g': 'core:cancel'
 
+  # cursor-history
+  #'ctrl-i':     'cursor-history:next'
+  #'ctrl-o':     'cursor-history:prev'
+  'ctrl-,': 'cursor-history:prev-within-editor'
+  'ctrl-.': 'cursor-history:next-within-editor'
+
+
 'atom-workspace atom-text-editor.editor':
   #'ctrl-h': 'editor:move-to-previous-word-boundary'
   'ctrl-h': 'word-jumper-deluxe:move-left'
@@ -32,7 +39,8 @@
   'ctrl-i': 'editor:move-to-first-character-of-line'
   'cmd-i':  'editor:auto-indent'
   'ctrl-l': 'go-to-line:toggle'
-  'ctrl-cmd-n': 'core:page-down'
+
+#  'ctrl-cmd-n': 'core:page-down'
   'ctrl-cmd-p': 'core:page-up'
 
   'cmd-N': 'editor:duplicate-lines'
@@ -56,6 +64,12 @@
 
   # from selection-mode
   'ctrl-space': 'selection-mode:toggle'
+
+  # keyboard-scroll
+  'ctrl-cmd-p': 'keyboard-scroll:scrollUpWithCursor'
+  'ctrl-cmd-n': 'keyboard-scroll:scrollDownWithCursor'
+
+
 
 'atom-workspace atom-text-editor.editor.selection-mode':
   'ctrl-g': 'selection-mode:cancel'
