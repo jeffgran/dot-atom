@@ -1,0 +1,65 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# '.editor':
+#   'enter': 'editor:newline'
+#
+# '.workspace':
+#   'ctrl-P': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+'atom-workspace':
+  'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-g': 'core:cancel'
+
+'atom-workspace atom-text-editor.editor':
+  #'ctrl-h': 'editor:move-to-previous-word-boundary'
+  'ctrl-h': 'word-jumper-deluxe:move-left'
+  #'ctrl-\'': 'editor:move-to-next-word-boundary'
+  'ctrl-\'': 'word-jumper-deluxe:move-right'
+  'ctrl-j':  'core:move-left'
+  'ctrl-;':  'core:move-right'
+  'cmd->': 'core:move-to-bottom'
+  'cmd-<': 'core:move-to-top'
+  'ctrl-i': 'editor:move-to-first-character-of-line'
+  'cmd-i':  'editor:auto-indent'
+  'ctrl-l': 'go-to-line:toggle'
+  'ctrl-cmd-n': 'core:page-down'
+  'ctrl-cmd-p': 'core:page-up'
+
+  'cmd-N': 'editor:duplicate-lines'
+  'ctrl-#': 'editor:toggle-line-comments'
+
+  'cmd-p': 'editor:move-line-up'
+  'cmd-n': 'editor:move-line-down'
+  #'cmd-P': 'editor:duplicate-lines' # command-pallette
+
+  # from transient-emacs
+  # 'ctrl-space': 'emacs:set-mark'
+  # "ctrl-space": "text-select-mode:toggle"
+  'ctrl-k':'editor:cut-to-end-of-line'
+  #'ctrl-g':'emacs:cancel'
+
+  # from center-line
+  'ctrl-cmd-i': 'center-line:toggle'
+
+  # expand-region
+  'cmd-space': 'expand-region:expand'
+
+  # from selection-mode
+  'ctrl-space': 'selection-mode:toggle'
+
+'atom-workspace atom-text-editor.editor.selection-mode':
+  'ctrl-g': 'selection-mode:cancel'
+
+
+'body':
+  'ctrl-g': 'core:cancel'

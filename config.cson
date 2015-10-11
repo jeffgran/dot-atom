@@ -1,0 +1,27 @@
+"*":
+  editor:
+    fontSize: 16
+    invisibles: {}
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    packagesWithKeymapsDisabled: [
+      "word-jumper-deluxe"
+      "center-line"
+      "autocomplete-plus"
+    ]
+  "exception-reporting":
+    userId: "3fcd4e54-0b9e-4eb5-08d2-ab849b79a7ab"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "bce55d26bfba6314fb2f66c6fd194b160ce2b763"
+  "disable-keybindings": {}
+  "word-jumper-deluxe": {}
+  "center-screen": {}
+  "atom-terminal-panel": {}
+  "expand-region": {}
+  "autocomplete-plus": {}
+  atomatigit: {}
