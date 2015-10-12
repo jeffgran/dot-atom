@@ -26,6 +26,11 @@
   'ctrl-,': 'cursor-history:prev-within-editor'
   'ctrl-.': 'cursor-history:next-within-editor'
 
+  # tab-switcher
+  'ctrl-v': 'tab-switcher:next'
+
+  'ctrl-x p': 'git-projects:toggle'
+
 
 'atom-workspace atom-text-editor.editor':
   #'ctrl-h': 'editor:move-to-previous-word-boundary'
@@ -69,6 +74,12 @@
   'ctrl-cmd-p': 'keyboard-scroll:scrollUpWithCursor'
   'ctrl-cmd-n': 'keyboard-scroll:scrollDownWithCursor'
 
+  # tab-switcher
+  'ctrl-v': 'tab-switcher:next'
+
+'ol.tab-switcher-tab-list':
+  'ctrl-p': 'tab-switcher:previous'
+  'ctrl-n': 'tab-switcher:next'
 
 
 'atom-workspace atom-text-editor.editor.selection-mode':

@@ -12,6 +12,10 @@
       "center-line"
       "autocomplete-plus"
     ]
+    disabledPackages: [
+      "symbols-view"
+      "tabs"
+    ]
   "exception-reporting":
     userId: "3fcd4e54-0b9e-4eb5-08d2-ab849b79a7ab"
   welcome:
@@ -36,3 +40,10 @@
     linesToScrollSingle: 15
     animationDuration: 50
   "cursor-history": {}
+  "tab-switcher": {}
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+  linter: {}
+  "linter-erb": {}
+  "git-projects":
+    rootPath: "~/dev;~/openlogic"
