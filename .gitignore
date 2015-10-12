@@ -5,3 +5,4 @@ dev
 .apm
 .node-gyp
 packages
+.tags
