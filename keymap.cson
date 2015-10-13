@@ -16,10 +16,13 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
+#
+'body':
+  'ctrl-g': 'unset!'
+
 'atom-workspace':
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
   'ctrl-g': 'core:cancel'
-
   # cursor-history
   #'ctrl-i':     'cursor-history:next'
   #'ctrl-o':     'cursor-history:prev'
@@ -45,21 +48,14 @@
   'cmd-i':  'editor:auto-indent'
   'ctrl-l': 'go-to-line:toggle'
 
-#  'ctrl-cmd-n': 'core:page-down'
-  'ctrl-cmd-p': 'core:page-up'
-
   'cmd-N': 'editor:duplicate-lines'
   'ctrl-#': 'editor:toggle-line-comments'
 
   'cmd-p': 'editor:move-line-up'
   'cmd-n': 'editor:move-line-down'
   #'cmd-P': 'editor:duplicate-lines' # command-pallette
-
-  # from transient-emacs
-  # 'ctrl-space': 'emacs:set-mark'
-  # "ctrl-space": "text-select-mode:toggle"
   'ctrl-k':'editor:cut-to-end-of-line'
-  #'ctrl-g':'emacs:cancel'
+
 
   # from center-line
   'ctrl-cmd-i': 'center-line:toggle'
@@ -73,9 +69,15 @@
   # keyboard-scroll
   'ctrl-cmd-p': 'keyboard-scroll:scrollUpWithCursor'
   'ctrl-cmd-n': 'keyboard-scroll:scrollDownWithCursor'
+  
+  # find
+  'ctrl-f': 'find-and-replace:show'
+  'ctrl-r': 'find-and-replace:show'
+  'cmd-f': 'find-and-replace:find-next-selected'
 
   # tab-switcher
   'ctrl-v': 'tab-switcher:next'
+  'tab': 'autocomplete-plus:activate'
 
 'ol.tab-switcher-tab-list':
   'ctrl-p': 'tab-switcher:previous'
@@ -85,6 +87,10 @@
 'atom-workspace atom-text-editor.editor.selection-mode':
   'ctrl-g': 'selection-mode:cancel'
 
+'atom-workspace atom-text-editor.editor.autocomplete-active':
+  'ctrl-g': 'autocomplete-plus:cancel'
 
-'body':
-  'ctrl-g': 'core:cancel'
+
+'atom-workspace.find-visible atom-text-editor.editor':
+  'ctrl-f': 'find-and-replace:find-next'
+  'ctrl-r': 'find-and-replace:find-previous'

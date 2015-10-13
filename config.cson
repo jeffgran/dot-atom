@@ -1,20 +1,28 @@
 "*":
   editor:
-    fontSize: 16
     invisibles: {}
+    scrollPastEnd: true
+    softWrapHangingIndent: 2
+    tabType: "soft"
+    fontSize: 16
+    fontFamily: "menlo"
   core:
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
     packagesWithKeymapsDisabled: [
       "word-jumper-deluxe"
       "center-line"
-      "autocomplete-plus"
+      "atom-ctags"
     ]
     disabledPackages: [
       "symbols-view"
       "tabs"
+      "atom-ctags"
+      "whitespace"
+      "autocomplete-snippets"
+      "snippets"
+    ]
+    themes: [
+      "one-dark-ui"
+      "jg-dark-syntax"
     ]
   "exception-reporting":
     userId: "3fcd4e54-0b9e-4eb5-08d2-ab849b79a7ab"
@@ -22,12 +30,16 @@
     showOnStartup: false
   metrics:
     userId: "bce55d26bfba6314fb2f66c6fd194b160ce2b763"
-  "disable-keybindings": {}
+  "disable-keybindings":
+    communityPackages: [
+      "transient-emacs"
+    ]
   "word-jumper-deluxe": {}
   "center-screen": {}
   "atom-terminal-panel": {}
   "expand-region": {}
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    enableAutoActivation: false
   atomatigit: {}
   minimap:
     plugins:
@@ -42,8 +54,18 @@
   "cursor-history": {}
   "tab-switcher": {}
   "atom-ctags":
-    autoBuildTagsWhenActive: true
+    cmdArgs: "--exclude=.gems --exclude=solr4 --exclude=solr5 --exclude=solr"
+    buildTimeout: 90000
   linter: {}
   "linter-erb": {}
   "git-projects":
     rootPath: "~/dev;~/openlogic"
+  "git-plus": {}
+  rspec: {}
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
+  "linter-ruby": {}
+  "one-dark-ui": {}
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
