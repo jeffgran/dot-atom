@@ -14,3 +14,8 @@ $ `apm star --installed`
 ## install starred packages
 
 $ `apm stars --install`
+
+
+## update stars list from currently installed packages
+
+$ `./update_stars.sh`
