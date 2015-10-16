@@ -32,14 +32,20 @@
   # tab-switcher
   'ctrl-v': 'tab-switcher:next'
 
-  'ctrl-x p': 'git-projects:toggle'
+  'ctrl-x p': 'project-manager:list-projects'
+  
+  # navigate
+  'cmd-o': 'navigate:forward-new'
+  
+  # clipboard-plus (kill-ring)
+  'cmd-ctrl-v': 'clipboard-plus:toggle'
 
 
 'atom-workspace atom-text-editor.editor':
-  #'ctrl-h': 'editor:move-to-previous-word-boundary'
-  'ctrl-h': 'word-jumper-deluxe:move-left'
-  #'ctrl-\'': 'editor:move-to-next-word-boundary'
-  'ctrl-\'': 'word-jumper-deluxe:move-right'
+  'ctrl-h': 'editor:move-to-previous-subword-boundary'
+  #'ctrl-h': 'word-jumper-deluxe:move-left'
+  'ctrl-\'': 'editor:move-to-next-subword-boundary'
+  #'ctrl-\'': 'word-jumper-deluxe:move-right'
   'ctrl-j':  'core:move-left'
   'ctrl-;':  'core:move-right'
   'cmd->': 'core:move-to-bottom'
@@ -54,7 +60,9 @@
   'cmd-p': 'editor:move-line-up'
   'cmd-n': 'editor:move-line-down'
   #'cmd-P': 'editor:duplicate-lines' # command-pallette
-  'ctrl-k':'editor:cut-to-end-of-line'
+  'ctrl-k': 'editor:cut-to-end-of-line'
+  
+  'ctrl-c 0': 'editor:copy-path'
 
 
   # from center-line
@@ -64,7 +72,7 @@
   'cmd-space': 'expand-region:expand'
 
   # from selection-mode
-  'ctrl-space': 'selection-mode:toggle'
+  'ctrl-space': 'selection-mode:toggle-without-deselecting'
 
   # keyboard-scroll
   'ctrl-cmd-p': 'keyboard-scroll:scrollUpWithCursor'
@@ -86,6 +94,9 @@
 
 'atom-workspace atom-text-editor.editor.selection-mode':
   'ctrl-g': 'selection-mode:cancel'
+  
+# 'atom-workspace atom-text-editor.editor:not(.selection-mode)'
+#   'ctrl-g': 'selection-mode:deselect' # <-- TODO implement that 
 
 'atom-workspace atom-text-editor.editor.autocomplete-active':
   'ctrl-g': 'autocomplete-plus:cancel'
@@ -94,3 +105,4 @@
 'atom-workspace.find-visible atom-text-editor.editor':
   'ctrl-f': 'find-and-replace:find-next'
   'ctrl-r': 'find-and-replace:find-previous'
+  'enter': 'find-and-replace:toggle'

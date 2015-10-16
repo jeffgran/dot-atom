@@ -15,7 +15,6 @@
     disabledPackages: [
       "symbols-view"
       "tabs"
-      "atom-ctags"
       "whitespace"
       "autocomplete-snippets"
       "snippets"
@@ -52,11 +51,13 @@
     linesToScrollSingle: 15
     animationDuration: 50
   "cursor-history": {}
-  "tab-switcher": {}
+  "tab-switcher":
+    fadeInDelay: 0
   "atom-ctags":
     cmdArgs: "--exclude=.gems --exclude=solr4 --exclude=solr5 --exclude=solr"
     buildTimeout: 90000
-  linter: {}
+  linter:
+    lintOnFly: false
   "linter-erb": {}
   "git-projects":
     rootPath: "~/dev;~/openlogic"
@@ -69,3 +70,10 @@
   "one-dark-ui": {}
   "find-and-replace":
     scrollToResultOnLiveSearch: true
+  navigate: {}
+  "clipboard-plus":
+    maximumLinesNumber: 3
+    maximumTextLength: 5000
+  "git-blame":
+    customCommitUrlTemplateString: "http://gitlab.openlogic.local/openlogic/<%- repo %>/commit/<%- revision %>"
+    ignoreWhiteSpaceDiffs: true

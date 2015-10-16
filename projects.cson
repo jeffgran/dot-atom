@@ -1,0 +1,20 @@
+olex:
+  title: "Olex"
+  paths: [
+    "/Users/jgran/openlogic/olex"
+  ]
+".atomconfiguration":
+  title: ".atom Configuration"
+  paths: [
+    "/Users/jgran/.atom"
+  ]
+"jg-dark-syntax":
+  title: "jg-dark-syntax"
+  paths: [
+    "/Users/jgran/dev/jg-dark-syntax"
+  ]
+"atom-comint-mode":
+  title: "atom-comint-mode"
+  paths: [
+    "/Users/jgran/dev/atom-comint-mode"
+  ]

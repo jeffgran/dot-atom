@@ -12,3 +12,6 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrap(true)
+require('remote')
+.require('browser-window')
+.addDevToolsExtension('/Users/jgran/.atom/devtools-themes/chrome-devtools-zerodarkmatrix-theme/theme-extension')
