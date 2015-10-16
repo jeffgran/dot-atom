@@ -77,3 +77,11 @@
   "git-blame":
     customCommitUrlTemplateString: "http://gitlab.openlogic.local/openlogic/<%- repo %>/commit/<%- revision %>"
     ignoreWhiteSpaceDiffs: true
+  "linter-jshint": {}
+  "language-babel": {}
+".babel.regexp.source":
+  editor:
+    softWrapHangingIndent: 2
+".js.jsx.source":
+  editor:
+    softWrapHangingIndent: 2
