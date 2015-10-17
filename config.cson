@@ -4,7 +4,7 @@
     scrollPastEnd: true
     softWrapHangingIndent: 2
     tabType: "soft"
-    fontSize: 16
+    fontSize: 15
     fontFamily: "menlo"
   core:
     packagesWithKeymapsDisabled: [
@@ -79,6 +79,8 @@
     ignoreWhiteSpaceDiffs: true
   "linter-jshint": {}
   "language-babel": {}
+  "advanced-open-file":
+    defaultInputValue: "Project root"
 ".babel.regexp.source":
   editor:
     softWrapHangingIndent: 2
