@@ -21,11 +21,12 @@
   'ctrl-g': 'unset!'
 
 'atom-workspace':
-  'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  #'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-o': 'advanced-open-file:toggle'
   'ctrl-g': 'core:cancel'
   # cursor-history
-  #'ctrl-i':     'cursor-history:next'
-  #'ctrl-o':     'cursor-history:prev'
+  'ctrl-<': 'cursor-history:prev'
+  'ctrl->': 'cursor-history:next'
   'ctrl-,': 'cursor-history:prev-within-editor'
   'ctrl-.': 'cursor-history:next-within-editor'
 
@@ -85,6 +86,8 @@
 
   # tab-switcher
   'ctrl-v': 'tab-switcher:next'
+
+':not(.advanced-open-file) atom-text-editor':
   'tab': 'autocomplete-plus:activate'
 
 'ol.tab-switcher-tab-list':

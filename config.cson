@@ -4,7 +4,7 @@
     scrollPastEnd: true
     softWrapHangingIndent: 2
     tabType: "soft"
-    fontSize: 16
+    fontSize: 15
     fontFamily: "menlo"
   core:
     packagesWithKeymapsDisabled: [
@@ -77,3 +77,5 @@
   "git-blame":
     customCommitUrlTemplateString: "http://gitlab.openlogic.local/openlogic/<%- repo %>/commit/<%- revision %>"
     ignoreWhiteSpaceDiffs: true
+  "advanced-open-file":
+    defaultInputValue: "Project root"
