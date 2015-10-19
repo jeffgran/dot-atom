@@ -40,7 +40,12 @@
   
   # clipboard-plus (kill-ring)
   'cmd-ctrl-v': 'clipboard-plus:toggle'
+  
+'atom-text-editor.editor': 
+  'tab': 'autocomplete-plus:activate'
 
+'.advanced-open-file atom-text-editor.editor':
+  'tab': 'advanced-open-file:autocomplete'
 
 'atom-workspace atom-text-editor.editor':
   'ctrl-h': 'editor:move-to-previous-subword-boundary'
@@ -87,8 +92,6 @@
   # tab-switcher
   'ctrl-v': 'tab-switcher:next'
 
-':not(.advanced-open-file) atom-text-editor':
-  'tab': 'autocomplete-plus:activate'
 
 'ol.tab-switcher-tab-list':
   'ctrl-p': 'tab-switcher:previous'

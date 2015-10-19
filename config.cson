@@ -4,13 +4,14 @@
     scrollPastEnd: true
     softWrapHangingIndent: 2
     tabType: "soft"
-    fontSize: 15
     fontFamily: "menlo"
+    showInvisibles: true
   core:
     packagesWithKeymapsDisabled: [
       "word-jumper-deluxe"
       "center-line"
       "atom-ctags"
+      "highlight-line"
     ]
     disabledPackages: [
       "symbols-view"
@@ -18,6 +19,7 @@
       "whitespace"
       "autocomplete-snippets"
       "snippets"
+      "atom-ctags"
     ]
     themes: [
       "one-dark-ui"
@@ -46,7 +48,7 @@
   "minimap-selection":
     highlightCursorsLines: true
   "highlight-line":
-    enableSelectionBorder: true
+    hideHighlightOnSelect: true
   "keyboard-scroll":
     linesToScrollSingle: 15
     animationDuration: 50
@@ -81,9 +83,10 @@
   "language-babel": {}
   "advanced-open-file":
     defaultInputValue: "Project root"
-".babel.regexp.source":
+  "comint-mode": {}
+".js.jsx.source":
   editor:
     softWrapHangingIndent: 2
-".js.jsx.source":
+".babel.regexp.source":
   editor:
     softWrapHangingIndent: 2
