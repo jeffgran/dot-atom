@@ -19,6 +19,9 @@
 #
 'body':
   'ctrl-g': 'unset!'
+  
+'*':
+  'ctrl-cmd-o': 'fuzzy-finder:toggle-file-finder'
 
 'atom-workspace':
   #'ctrl-o': 'fuzzy-finder:toggle-file-finder'
@@ -46,12 +49,13 @@
 
 '.advanced-open-file atom-text-editor.editor':
   'tab': 'advanced-open-file:autocomplete'
+  'ctrl-,': 'advanced-open-file:delete-path-component'
+  'ctrl-.': 'advanced-open-file:undo'
 
 'atom-workspace atom-text-editor.editor':
-  'ctrl-h': 'editor:move-to-previous-subword-boundary'
-  #'ctrl-h': 'word-jumper-deluxe:move-left'
-  'ctrl-\'': 'editor:move-to-next-subword-boundary'
-  #'ctrl-\'': 'word-jumper-deluxe:move-right'
+  'ctrl-h': 'sublime-word-navigation:move-to-beginning-of-word'
+  'ctrl-\'': 'sublime-word-navigation:move-to-end-of-word'
+  
   'ctrl-j':  'core:move-left'
   'ctrl-;':  'core:move-right'
   'cmd->': 'core:move-to-bottom'
@@ -68,7 +72,8 @@
   #'cmd-P': 'editor:duplicate-lines' # command-pallette
   'ctrl-k': 'editor:cut-to-end-of-line'
   
-  'ctrl-c 0': 'editor:copy-path'
+  #'ctrl-c 0': 'editor:copy-path'
+  #'ctrl-c 0': 'unset!'
 
 
   # from center-line
@@ -85,9 +90,13 @@
   'ctrl-cmd-n': 'keyboard-scroll:scrollDownWithCursor'
   
   # find
-  'ctrl-f': 'find-and-replace:show'
-  'ctrl-r': 'find-and-replace:show'
-  'cmd-f': 'find-and-replace:find-next-selected'
+  # 'ctrl-f': 'find-and-replace:show'
+  # 'ctrl-r': 'find-and-replace:show'
+  # 'cmd-f': 'find-and-replace:find-next-selected'
+  
+  # isearch
+  'ctrl-f': 'isearch:search-forward'
+  'ctrl-r': 'isearch:search-backward'
 
   # tab-switcher
   'ctrl-v': 'tab-switcher:next'
@@ -108,7 +117,14 @@
   'ctrl-g': 'autocomplete-plus:cancel'
 
 
-'atom-workspace.find-visible atom-text-editor.editor':
-  'ctrl-f': 'find-and-replace:find-next'
-  'ctrl-r': 'find-and-replace:find-previous'
-  'enter': 'find-and-replace:toggle'
+# 'atom-workspace.find-visible atom-text-editor.editor':
+#   'ctrl-f': 'find-and-replace:find-next'
+#   'ctrl-r': 'find-and-replace:find-previous'
+#   'enter': 'find-and-replace:toggle'
+
+'atom-workspace atom-text-editor.isearch':
+  'ctrl-w': 'isearch:fill-cursor-word'
+  'enter': 'core:confirm'
+  'ctrl-g': 'isearch:cancel'
+  'cmd-p': 'isearch:fill-history-prev'
+  'cmd-n': 'isearch:fill-history-next'

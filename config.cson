@@ -4,14 +4,17 @@
     scrollPastEnd: true
     softWrapHangingIndent: 2
     tabType: "soft"
-    fontFamily: "menlo"
     showInvisibles: true
+    softWrap: true
+    fontSize: 13
   core:
     packagesWithKeymapsDisabled: [
       "word-jumper-deluxe"
       "center-line"
       "atom-ctags"
       "highlight-line"
+      "incremental-search"
+      "sublime-word-navigation"
     ]
     disabledPackages: [
       "symbols-view"
@@ -25,6 +28,8 @@
       "one-dark-ui"
       "jg-dark-syntax"
     ]
+    projectHome: "~/dev"
+    openEmptyEditorOnStart: false
   "exception-reporting":
     userId: "3fcd4e54-0b9e-4eb5-08d2-ab849b79a7ab"
   welcome:
@@ -81,12 +86,17 @@
     ignoreWhiteSpaceDiffs: true
   "linter-jshint": {}
   "language-babel": {}
-  "advanced-open-file":
-    defaultInputValue: "Project root"
+  "advanced-open-file": {}
   "comint-mode": {}
-".js.jsx.source":
+  isearch:
+    wildChar: "*"
+    vimModeSyncSearchHistoy: false
+  "autocomplete-ruby": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+".babel.regexp.source":
   editor:
     softWrapHangingIndent: 2
-".babel.regexp.source":
+".js.jsx.source":
   editor:
     softWrapHangingIndent: 2
